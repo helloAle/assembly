@@ -1,4 +1,12 @@
+;   transforma o programa para linguagem de maquina
+;       nasm -f elf64 hello.nasm
+;   linkeditar - transformar o programa em linguagem de maquina para um executavel
+;       ld -s -o hello hello.o
+;       ./hello
+
 section .data
+    msg db 'Hello world!'
+    tam equ $- msg
 
 section .text
 

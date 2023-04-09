@@ -5,7 +5,7 @@
 ;       ./hello
 
 section .data
-    msg db 'Hello world!'
+    msg db 'Hello world!', 0xA
     tam equ $- msg
 
 section .text
